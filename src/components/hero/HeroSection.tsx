@@ -46,7 +46,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenApply }) => {
               src="/images/ajceJubileeLogo.png"
               alt=""
               aria-hidden="true"
-              className="h-64 sm:h-80 md:h-[400px] lg:h-[480px] w-auto object-contain opacity-25 select-none filter blur-[0.3px] transition-all transform scale-110"
+              className="h-72 sm:h-[380px] md:h-[500px] lg:h-[600px] w-auto object-contain opacity-30 select-none transition-all transform scale-125"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = 'https://www.ajce.in/ajceJubileeLogo.png';
               }}
