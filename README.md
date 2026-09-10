@@ -56,7 +56,7 @@ It communicates the institution's core cadence:
 ### Installation
 ```bash
 # Clone the repository
-git clone <YOUR_REPO_URL>
+git clone https://github.com/Sonaaaaaaaaaaaaaah/ARCADE.git
 cd ARCADE
 
 # Install dependencies
