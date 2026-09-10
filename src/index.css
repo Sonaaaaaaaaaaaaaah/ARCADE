@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: #0F172A;
+  }
+}
+
+/* Accessibility Modes */
+/* Text Sizes */
+html.text-size-large {
+  font-size: 112.5%; /* 18px */
+}
+
+html.text-size-xlarge {
+  font-size: 125%; /* 20px */
+}
+
+/* High Contrast Mode */
+html.high-contrast {
+  filter: contrast(135%);
+}
+
+html.high-contrast body {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+html.high-contrast a,
+html.high-contrast button {
+  outline: 2px solid transparent;
+}
+
+/* Reduced Motion Mode */
+html.reduced-motion *,
+html.reduced-motion *::before,
+html.reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Dyslexia-Friendly Font Mode */
+html.dyslexia-font,
+html.dyslexia-font body,
+html.dyslexia-font * {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', sans-serif !important;
+  letter-spacing: 0.06em !important;
+  line-height: 1.8 !important;
+  word-spacing: 0.12em !important;
+}
+
+/* Highlight Links Mode */
+html.highlight-links a,
+html.highlight-links button:not(.no-highlight) {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2.5px !important;
+  text-underline-offset: 4px !important;
+  outline: 2.5px solid #D97706 !important;
+  outline-offset: 3px !important;
+}
+
+/* Larger Click Targets Mode */
+html.large-targets button,
+html.large-targets a,
+html.large-targets input,
+html.large-targets [role="button"] {
+  min-height: 52px !important;
+  min-width: 52px !important;
+  padding: 0.75rem 1.25rem !important;
+}
+
+/* Reading Mode */
+html.reading-mode body {
+  background-color: #FDFBF7 !important;
+  line-height: 1.95 !important;
+}
+
+html.reading-mode p,
+html.reading-mode li {
+  font-size: 1.125rem !important;
+  max-width: 72ch !important;
+  color: #1E293B !important;
+}
+
+/* Keyboard Focus Indicators (WCAG AA Compliance) */
+:focus-visible {
+  outline: 2.5px solid #D97706 !important;
+  outline-offset: 3px !important;
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D97706;
+}
+
+/* Gradients and Accent Highlights for Light Theme */
+.text-gradient-amber {
+  background: linear-gradient(135deg, #0F172A 20%, #D97706 70%, #B45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-amber-light {
+  box-shadow: 0 10px 30px -5px rgba(217, 119, 6, 0.15);
+}
