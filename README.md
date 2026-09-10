@@ -8,6 +8,10 @@
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8.svg)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-8.3.0-646cff.svg)](https://vitejs.dev/)
 [![WCAG 2.1 AA](https://img.shields.io/badge/Accessibility-WCAG_2.1_AA-emerald.svg)](#accessibility-suite)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-success.svg)](https://sonaaaaaaaaaaaaaah.github.io/ARCADE/)
+
+🌐 **Live Deployed URL**: **[https://sonaaaaaaaaaaaaaah.github.io/ARCADE/](https://sonaaaaaaaaaaaaaah.github.io/ARCADE/)**  
+📁 **Public GitHub Repository**: **[https://github.com/Sonaaaaaaaaaaaaaah/ARCADE](https://github.com/Sonaaaaaaaaaaaaaah/ARCADE)**
 
 ---
 

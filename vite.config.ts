@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  base: './',
   plugins: [
     tailwindcss(),
     react(),
@@ -10,5 +11,8 @@ export default defineConfig({
   server: {
     port: 3000,
     open: false,
+    watch: {
+      ignored: ['**/.git/**', '**/.github/**', '**/*.bat', '**/dist/**'],
+    },
   },
 });
